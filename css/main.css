@@ -2,6 +2,7 @@ p{
     font-family: DroidSerif, Times, serif;
     text-align: justify;
     font-size: 40px;
+    margin: 10px 0 10px;
 }
 .p_center{
     text-align: center;
