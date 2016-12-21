@@ -7,6 +7,14 @@ p{
     text-align: center;
     margin: 10px 0 10px;
 }
+.p_cover{
+    font-size: 25px;
+    margin: 0 0 0;
+}
+.p_cover:first-letter{
+    font-size: 25px;
+    margin: 0 0 0;
+}
 .navbar{
     margin-bottom: 0px;
 }
@@ -21,7 +29,7 @@ p{
 }
 .cover-image{
     margin: 0 auto;
-    height: 70vh;
+    height: 10vh;
 }
 
 .page-image{
