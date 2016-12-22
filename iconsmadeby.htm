@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+  <title>Alfabēts</title>
+  
+    <!-- Add to homescreen for Chrome on Android -->
+  <meta name="mobile-web-app-capable" content="yes">
+  <!-- Add to homescreen for Safari on iOS -->
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="apple-mobile-web-app-title" content="Alfabēts">
+    
+  <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
+  <link href="css/main.css" rel="stylesheet" type="text/css">
+      
+</head>
+  <body>
+      <div class="navbar navbar-default navbar-inverse navbar-static-top">
+            <div class="container">
+                <div class="row">
+                <div class="col-lg-8">
+                    <div class="navbar-header">
+                      <a class="navbar-brand" href="/"><span class="glyphicon glyphicon-book"></span> Alfabēts</a>
+                    </div>
+                </div>
+                </div>
+            </div>
+        </div>
+      <div class="container abece-container">
+            <div class="row">
+                <div class="col-lg-6 col-lg-offset-3 col-md-8 col-md-offset-2">
+                    <div class="panel panel-default">
+                        
+                        <!-- panel body -->
+                        <div class="panel-body">
+                            <img src="img/aita.svg" class="cover-image"/>
+                            <img src="img/bumba.svg" class="cover-image"/>
+                            <img src="img/calis.svg" class="cover-image"/>
+                            <img src="img/cibas.svg" class="cover-image"/>
+                            <img src="img/delfins.svg" class="cover-image"/>
+                            <img src="img/ezis.svg" class="cover-image"/>
+                            <img src="img/ezelis.svg" class="cover-image"/>
+                            <img src="img/fotoaparats.svg" class="cover-image"/>
+                            <img src="img/globuss.svg" class="cover-image"/>
+                            <img src="img/gitara.svg" class="cover-image"/>
+                            <img src="img/helikopters.svg" class="cover-image"/>
+                            <img src="img/izpletnis.svg" class="cover-image"/>
+                            <img src="img/jaka.svg" class="cover-image"/>
+                            <img src="img/klauns.svg" class="cover-image"/>
+                            <img src="img/kirsis.svg" class="cover-image"/>
+                            <img src="img/lacis.svg" class="cover-image"/>
+                            <img src="img/lipa.svg" class="cover-image"/>
+                            <img src="img/masina.svg" class="cover-image"/>
+                            <img src="img/nazis.svg" class="cover-image"/>
+                            <img src="img/ola.svg" class="cover-image"/>
+                            <img src="img/papagailis.svg" class="cover-image"/>
+                            <img src="img/ragana.svg" class="cover-image"/>
+                            <img src="img/skeres.svg" class="cover-image"/>
+                            <img src="img/torte.svg" class="cover-image"/>
+                            <img src="img/ugunskurs.svg" class="cover-image"/>
+                            <img src="img/usas.svg" class="cover-image"/>
+                            <img src="img/vavere.svg" class="cover-image"/>
+                            <img src="img/zirafe.svg" class="cover-image"/>
+                            <div>Icons made by <a href="http://www.freepik.com" title="Freepik">Freepik</a> from <a href="http://www.flaticon.com" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
+                            
+                            <img src="img/abols.svg" class="cover-image"/>
+                            <img src="img/saldejums.svg" class="cover-image"/>
+                            <img src="img/zemene.svg" class="cover-image"/>
+                            <div>Icons made by <a href="http://www.flaticon.com/authors/madebyoliver" title="Madebyoliver">Madebyoliver</a> from <a href="http://www.flaticon.com" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
+                            
+                            <img src="img/ikskis.svg" class="cover-image"/>
+                            <img src="img/nieburs.svg" class="cover-image"/>
+                            <div>Icons made by <a href="http://www.flaticon.com/authors/roundicons" title="Roundicons">Roundicons</a> from <a href="http://www.flaticon.com" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+          
+      </div>
+        <!-- Footer -->
+        <footer class="text-center">
+            <div class="footer-above">
+                <div class="container">
+                    <div class="row">
+                        <div class="footer-col col-md-12">
+                     
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-below">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-12">
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+     <script type="text/javascript">
+        $( document ).ready(function() {
+            $('#abece').on('slide.bs.carousel', function (event) {
+                
+                if(event.direction=="left"){
+                    var $nextImage = $('.active.item', this).next('.item').find('img');
+                    $nextImage.attr('src', $nextImage.data('src'));
+                    
+                    $nextImage = $('.active.item', this).next('.item').next('.item').find('img');
+                    $nextImage.attr('src', $nextImage.data('src'));
+                }else if(event.direction=="right"){
+                    var $nextImage = $('.active.item', this).prev('.item').find('img');
+                    $nextImage.attr('src', $nextImage.data('src'));
+                    
+                    $nextImage = $('.active.item', this).prev('.item').prev('.item').find('img');
+                    $nextImage.attr('src', $nextImage.data('src'));
+                }
+            })
+            
+            
+                $('#0').find('img').attr('src', $('#0').find('img').data('src'));
+                $('#0').addClass("active");
+                
+                var $nextImage = $('.active.item', this).next('.item').find('img');
+                $nextImage.attr('src', $nextImage.data('src'));
+            
+        });
+    </script>
+  </body>
+</html>
